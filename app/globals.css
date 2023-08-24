@@ -93,4 +93,7 @@
   .nav-link {
     @apply uppercase text-[10px] p-3 tracking-wider;
   }
+  .header-bg {
+    @apply bg-[url('/header.png')] bg-cover bg-center;
+  }
 }
