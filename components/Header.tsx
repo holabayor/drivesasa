@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 
 const Header = () => {
   return (
-    <header className="max-width header-gradient flex flex-col items-center justify-between p-4 md:p-12 lg:p-24">
+    <header className="max-width header-gradient flex flex-col items-center justify-between p-4 md:p-12 lg:p-24 bg-[url('./header.png')]">
       <Navbar />
 
       <h1 className="text-4xl md:text-6xl font-bold md:font-extrabold text-center uppercase">
