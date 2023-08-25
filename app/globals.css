@@ -94,6 +94,6 @@
     @apply uppercase text-[10px] p-3 tracking-wider;
   }
   .header-bg {
-    @apply bg-[url('/header.png')] bg-cover bg-center;
+    @apply w-full h-screen z-10 relative bg-[url('/header.png')] bg-cover bg-center before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-gray-600 before:to-white before:to-40%  before:z-[-5];
   }
 }

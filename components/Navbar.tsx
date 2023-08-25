@@ -6,7 +6,7 @@ import React from 'react';
 
 export default function Navbar() {
   const [toggle, setToggle] = React.useState(false);
-  const Icon = toggle ? Menu : X;
+  const Icon = toggle ? X : Menu;
   return (
     <nav className="min-w-full flex-between py-2 bg-white px-4 md:px-12 lg:px-24">
       <Image src="/logo.png" alt="logo" width={70} height={70} />
