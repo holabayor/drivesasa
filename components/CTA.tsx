@@ -22,37 +22,39 @@ export default function CTA() {
         </p>
         <Button />
       </div>
-      <div className="flex flex-col items-center rounded-md max-w-[250px] bg-red-400 p-4">
-        <h4 className="uppercase font-semibold text-xs">expert advisory</h4>
+      <div className="flex flex-col gap-4 items-center rounded-md max-w-[250px] bg-red-400 p-4">
         <Image
           src="/hands.png"
           alt="cta"
-          width={40}
-          height={40}
+          width={50}
+          height={50}
           className="object-contain"
         />
 
-        <p className="p-2 text-xs text-center">
+        <h4 className="uppercase font-semibold text-xs">expert advisory</h4>
+        <p className="text-xs text-center">
           Get expert advisory from the moment you purchase your car.
           Consultation on vehicle choice, insurance options, financing and
           tracking.
         </p>
+        <Button />
       </div>
-      <div className="flex flex-col items-center rounded-md max-w-[250px] bg-red-400 p-4">
-        <h4 className="uppercase font-semibold text-xs">expert advisory</h4>
+      <div className="flex flex-col gap-4 items-center rounded-md max-w-[250px] bg-red-400 p-4">
         <Image
           src="/hands.png"
           alt="cta"
-          width={40}
-          height={40}
+          width={50}
+          height={50}
           className="object-contain"
         />
 
-        <p className="p-2 text-xs text-center">
+        <h4 className="uppercase font-semibold text-xs">expert advisory</h4>
+        <p className="text-xs text-center">
           Get expert advisory from the moment you purchase your car.
           Consultation on vehicle choice, insurance options, financing and
           tracking.
         </p>
+        <Button />
       </div>
     </div>
   );

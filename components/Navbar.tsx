@@ -8,7 +8,7 @@ export default function Navbar() {
   const [toggle, setToggle] = React.useState(false);
   const Icon = toggle ? X : Menu;
   return (
-    <nav className="min-w-full flex-between py-2 bg-white px-4 md:px-12 lg:px-24">
+    <nav className="max-width flex-between py-2 bg-white px-4 md:px-12 lg:px-24 z-50">
       <Image src="/logo.png" alt="logo" width={70} height={70} />
       <ul className="hidden sm:flex list-none">
         <li className="nav-link">Home</li>
@@ -22,7 +22,7 @@ export default function Navbar() {
         <div
           className={`${
             toggle ? 'flex' : 'hidden'
-          } py-2 px-4 absolute top-[50px] right-0 mx-4 w-min-[200px] rounded-xl bg-slate-400 transition`}
+          } py-2 px-4 absolute top-[50px] right-0 mx-4 w-min-[200px] rounded-xl bg-slate-400 transition z-20`}
         >
           <ul className="flex flex-col justify-end items-center flex-1">
             <li className="nav-link">Home</li>

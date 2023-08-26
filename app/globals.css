@@ -77,7 +77,7 @@
 
 @layer components {
   .max-width {
-    @apply mx-auto max-w-[1920px];
+    @apply mx-auto max-w-[1440px];
   }
 
   .flex-center {
@@ -91,9 +91,9 @@
     @apply bg-gradient-to-b from-gray-600 to-white to-80%;
   }
   .nav-link {
-    @apply uppercase text-[10px] p-3 tracking-wider;
+    @apply uppercase text-[10px] p-3 tracking-wider hover:bg-slate-400 cursor-pointer;
   }
   .header-bg {
-    @apply w-full h-screen z-10 relative bg-[url('/header.png')] bg-cover bg-center before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-gray-600 before:to-white before:to-40%  before:z-[-5];
+    @apply w-full h-screen z-10  bg-[url('/header.png')] bg-cover bg-center before:content-['']  before:inset-0 before:bg-gradient-to-b before:from-gray-600 before:to-white before:to-40% before:opacity-10 before:z-[-5];
   }
 }
