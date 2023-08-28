@@ -11,7 +11,9 @@ interface CTACardProps {
 
 export default function CTACard({ heading, text, icon }: CTACardProps) {
   return (
-    <div className="flex flex-col gap-4 items-center justify-between rounded-md max-w-[250px] bg-blue-100 py-6 px-4">
+    <div
+      className={`flex flex-1 flex-col gap-4 items-center justify-between rounded-md max-w-[250px] py-6 px-4 bg-blue-100 `}
+    >
       {icon && (
         <Image
           src={icon}
@@ -21,10 +23,10 @@ export default function CTACard({ heading, text, icon }: CTACardProps) {
           className="object-contain"
         />
       )}
-      <>
-        <h4 className="uppercase font-semibold text-xs md:pt-2">{heading}</h4>
+      <div className="flex flex-col items-center">
+        <h4 className="uppercase font-semibold text-xs py-2">{heading}</h4>
         <p className="text-xs text-center">{text}</p>
-      </>
+      </div>
       <Button label="book appointment" white />
     </div>
   );

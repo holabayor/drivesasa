@@ -13,7 +13,6 @@ export default function CTA() {
           heading={card.heading}
           text={card.text}
           icon={card.icon}
-          button={card.button?.label}
         />
       ))}
     </div>

@@ -1,10 +1,11 @@
 import React from 'react';
-import Navbar from './Navbar';
 import CTA from './CTA';
+import { heroCards } from '@/app/constants';
+import CTACard from './CTACard';
 
-const Header = () => {
+const Hero = () => {
   return (
-    <header className="max-width flex flex-col items-center justify-between header-bg">
+    <section className="max-width flex flex-col items-center justify-between header-bg">
       <div className="flex flex-col items-center py-8">
         <h1 className="text-4xl md:text-6xl font-bold md:font-extrabold text-center uppercase">
           welcome to <br />
@@ -14,9 +15,18 @@ const Header = () => {
           Your Trusted Car Advisory Service
         </p>
       </div>
-      <CTA />
-    </header>
+      <div className="flex flex-col md:flex-row gap-2 md:gap-4 py-6 md:px-4">
+        {heroCards.map((card, index) => (
+          <CTACard
+            key={index}
+            heading={card.heading}
+            text={card.text}
+            icon={card.icon}
+          />
+        ))}
+      </div>
+    </section>
   );
 };
 
-export default Header;
+export default Hero;
