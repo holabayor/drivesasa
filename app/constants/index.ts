@@ -7,6 +7,7 @@ export const heroCards = [
     heading: 'Expert advisory',
     text: 'Get expert advisory from the moment you purchase your car. Consultation on vehicle choice, insurance options, financing and tracking',
     button: { label: 'book appointment', white: false },
+    white: false,
   },
   {
     id: 2,
@@ -15,6 +16,7 @@ export const heroCards = [
     text: 'Hundreds of automotive service providers on our platform. Request well vetted service, upgrades and modification, repairs, among others.',
     btn: 'browse service',
     bg: 'red',
+    white: false,
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ export const heroCards = [
     heading: 'drivesasa marketplace',
     text: 'Browse thousands of products ranging from cars, spare parts and accessories. Our vendors are thoroughly verified to ensure integrity and quality.',
     btn: 'go to marketplace',
+    white: false,
   },
 ];
 
@@ -49,5 +52,32 @@ export const advisoryCards = [
     heading: 'insurance solutions',
     text: 'Navigating insurance options can be daunting. At Drivesasa, we guide you through the insurance process, helping you find the best coverage from trusted providers. Your protection matters, and we’re here to ensure you make informed choices for a secure journey ahead.',
     btn: 'book appointment',
+  },
+];
+
+export const products = [
+  {
+    id: 1,
+    name: 'Toyota Prado Land Cruiser V8',
+    price: 'Ksh 3,500,000',
+    image: '/images/products/1.jpg',
+  },
+  {
+    id: 2,
+    name: 'Land Rover Discovery',
+    price: 'Ksh 3,500,000',
+    image: '/images/products/2.jpg',
+  },
+  {
+    id: 3,
+    name: 'Range Rover Sport',
+    price: 'Ksh 3,500,000',
+    image: '/images/products/3.jpg',
+  },
+  {
+    id: 4,
+    name: 'Toyota Fortuner',
+    price: 'Ksh 3,500,000',
+    image: '/images/products/4.jpg',
   },
 ];

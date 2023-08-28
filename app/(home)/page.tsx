@@ -1,17 +1,15 @@
-import Image from 'next/image';
-import Header from '@/components/Header';
+import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
-import CarExperts from '@/components/CarExperts';
 import Advisory from '@/components/Advisory';
+import Marketplace from '@/components/Marketplace';
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <Header />
+      <Hero />
       <Advisory />
-      <CarExperts />
-      <main className="flex min-h-screen flex-col items-center justify-between p-24"></main>
+      <Marketplace />
     </>
   );
 }

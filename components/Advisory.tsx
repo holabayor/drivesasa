@@ -6,11 +6,22 @@ import CTACard from './CTACard';
 
 export default function Advisory() {
   return (
-    <section>
-      <div className="flex flex-col md:flex-row gap-2 md:gap-4 py-6 md:px-4">
-        {advisoryCards.map((card, index) => (
-          <CTACard key={index} heading={card.heading} text={card.text} />
-        ))}
+    <section className="advisory-bg">
+      <div className="max-width flex flex-col justify-between p-2 md:p-6">
+        <div className="flex flex-col py-2 md:py-6">
+          <p className="text-[8px] font-semibold uppercase text-red-600">
+            car experts
+          </p>
+          <h2 className="font-extrabold text-left">
+            Harness Our <br />
+            Vehicle Expertise
+          </h2>
+        </div>
+        <div className="flex flex-wrap gap-2 md:gap-4 py-4">
+          {advisoryCards.map((card, index) => (
+            <CTACard key={index} heading={card.heading} text={card.text} />
+          ))}
+        </div>
       </div>
     </section>
   );

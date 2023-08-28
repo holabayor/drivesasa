@@ -7,9 +7,10 @@ interface CTACardProps {
   heading: string;
   text: string;
   icon?: StaticImageData;
+  white?: boolean;
 }
 
-export default function CTACard({ heading, text, icon }: CTACardProps) {
+export default function CTACard({ heading, text, icon, white }: CTACardProps) {
   return (
     <div
       className={`flex flex-1 flex-col gap-4 items-center justify-between rounded-md max-w-[250px] py-6 px-4 bg-blue-100 `}
@@ -27,7 +28,7 @@ export default function CTACard({ heading, text, icon }: CTACardProps) {
         <h4 className="uppercase font-semibold text-xs py-2">{heading}</h4>
         <p className="text-xs text-center">{text}</p>
       </div>
-      <Button label="book appointment" white />
+      <Button label="book appointment" white={white} />
     </div>
   );
 }
