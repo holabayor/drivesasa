@@ -13,7 +13,11 @@ interface CTACardProps {
 export default function CTACard({ heading, text, icon, white }: CTACardProps) {
   return (
     <div
-      className={`flex flex-1 flex-col gap-4 items-center justify-between rounded-md max-w-[250px] py-6 px-4 bg-blue-100 hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out `}
+      className={`flex flex-1 flex-col gap-4 items-center justify-between rounded-md max-w-[250px] py-6 px-4 ${
+        white
+          ? 'first:bg-blue-100 last:bg-blue-100'
+          : 'first:bg-white last:bg-white'
+      }  bg-rose-100/90 hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out `}
     >
       {icon && (
         <Image
@@ -24,6 +28,7 @@ export default function CTACard({ heading, text, icon, white }: CTACardProps) {
           className="object-contain"
         />
       )}
+
       <div className="flex flex-col items-center">
         <h4 className="uppercase font-semibold text-xs py-2">{heading}</h4>
         <p className="text-xs text-center">{text}</p>
