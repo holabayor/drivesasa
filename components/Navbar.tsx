@@ -22,7 +22,7 @@ export default function Navbar() {
         <div
           className={`${
             toggle ? 'flex' : 'hidden'
-          } py-2 px-4 absolute top-[50px] right-0 mx-4 w-min-[200px] rounded-xl bg-slate-400 transition z-20`}
+          } py-2 px-4 absolute top-[50px] right-0 w-full rounded-xl bg-slate-400 transition z-20`}
         >
           <ul className="flex flex-col justify-end items-center flex-1">
             <li className="nav-link">Home</li>

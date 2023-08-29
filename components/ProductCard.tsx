@@ -18,7 +18,7 @@ export default function ProductCard({
 }: ProductCardProps) {
   return (
     <div
-      className={`flex flex-1 flex-col gap-4 items-start justify-between rounded-md w-full py-6 px-4 bg-blue-100 `}
+      className={`flex flex-1 flex-col gap-4 items-start justify-between rounded-md  py-6 px-4 bg-blue-100 `}
     >
       <Image
         src={image}
