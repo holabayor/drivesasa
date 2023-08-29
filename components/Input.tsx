@@ -1,23 +1,18 @@
 'use client';
 
 interface InputProps {
-  id: string;
-  label: string;
   type?: string;
-  placeholder?: string;
+  placeholder: string;
   disabled?: boolean;
 }
 
 export default function Input({
-  id,
-  label,
-  type,
+  type = 'text',
   placeholder,
-  disabled,
+  disabled = false,
 }: InputProps) {
   return (
     <input
-      id={id}
       type={type}
       placeholder={placeholder}
       disabled={disabled}

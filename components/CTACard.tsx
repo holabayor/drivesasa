@@ -13,7 +13,7 @@ interface CTACardProps {
 export default function CTACard({ heading, text, icon, white }: CTACardProps) {
   return (
     <div
-      className={`flex flex-1 flex-col gap-4 items-center justify-between rounded-md max-w-[250px] py-6 px-4 bg-blue-100 `}
+      className={`flex flex-1 flex-col gap-4 items-center justify-between rounded-md max-w-[250px] py-6 px-4 bg-blue-100 hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out `}
     >
       {icon && (
         <Image

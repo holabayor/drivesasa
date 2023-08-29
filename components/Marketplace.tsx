@@ -4,8 +4,8 @@ import ProductCard from './ProductCard';
 
 export default function Marketplace() {
   return (
-    <section className="max-width flex flex-col items-center justify-between p-4 md:p-6">
-      <div className="flex flex-col py-2 md:py-6">
+    <section className="max-width flex-center flex-col p-4 md:p-6">
+      <div className="flex flex-col items-center py-2 md:py-6">
         <p className="text-[8px] font-semibold uppercase text-red-600">
           drivesasa marketplace
         </p>

@@ -18,32 +18,32 @@ export default function ProductCard({
 }: ProductCardProps) {
   return (
     <div
-      className={`flex flex-1 flex-col gap-4 items-start justify-between rounded-md  py-6 px-4 bg-blue-100 `}
+      className={`flex flex-col gap-4 items-start justify-between rounded-md pb-4 shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out`}
     >
       <Image
         src={image}
         alt="product"
-        width={200}
-        height={200}
+        width={400}
+        height={400}
         className="object-contain"
       />
-      {icons && (
-        <div>
-          <Image
-            src={icons[0]}
-            alt="icon"
-            width={40}
-            height={40}
-            className="object-contain"
-          />
-        </div>
-      )}
-      <div className="flex flex-col items-start">
-        <h4 className="uppercase font-semibold text-xs py-2">{name}</h4>
-        <p className="text-xs text-center">{price}</p>
-      </div>
 
-      <Button label="more details" />
+      <div className="flex flex-col items-start px-2">
+        <h4 className="uppercase font-semibold text-xs sm:text-sm">{name}</h4>
+        <p className="text-sm text-center">{price}</p>
+        {icons && (
+          <div>
+            <Image
+              src={icons[0]}
+              alt="icon"
+              width={40}
+              height={40}
+              className="object-contain"
+            />
+          </div>
+        )}
+        <Button label="more details" />
+      </div>
     </div>
   );
 }
