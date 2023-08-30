@@ -18,6 +18,7 @@ export default function Marketplace() {
             name={product.name}
             image={product.image}
             price={product.price}
+            rating={product.rating}
           />
         ))}
       </div>

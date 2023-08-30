@@ -13,7 +13,7 @@ interface CTACardProps {
 export default function CTACard({ heading, text, icon, white }: CTACardProps) {
   return (
     <div
-      className={`flex flex-1 flex-col gap-4 items-center justify-between rounded-md max-w-[250px] py-6 px-4 ${
+      className={`flex flex-1 flex-col gap-4 items-center justify-between rounded-md max-w-[300px] py-6 px-4 ${
         white
           ? 'first:bg-blue-100 last:bg-blue-100'
           : 'first:bg-white last:bg-white'

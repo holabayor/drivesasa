@@ -89,24 +89,28 @@ export const products = [
     name: 'Toyota Prado Land Cruiser V8',
     price: 'Ksh 3,500,000',
     image: '/images/prado.png',
+    rating: 4,
   },
   {
     id: 2,
     name: 'Land Rover Discovery',
     price: 'Ksh 3,500,000',
     image: '/images/landrover.png',
+    rating: 5,
   },
   {
     id: 3,
     name: 'Range Rover Sport',
     price: 'Ksh 3,500,000',
     image: '/images/rangerover.png',
+    rating: 5,
   },
   {
     id: 4,
     name: 'Toyota Fortuner',
     price: 'Ksh 3,500,000',
     image: '/images/fortuner.png',
+    rating: 4,
   },
 ];
 
