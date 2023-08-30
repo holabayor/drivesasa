@@ -23,7 +23,7 @@ export default function Navbar() {
         <div
           className={`${
             toggle ? 'flex' : 'hidden'
-          } py-2 px-4 absolute top-[50px] right-0 w-full h-contain bg-white animate-nav-slide z-20`}
+          } py-2 px-4 absolute top-[50px] border-t right-0 w-full h-contain bg-white animate-nav-slide z-20`}
         >
           <ul className="flex flex-col justify-end items-center flex-1">
             {navLinks.map((link, index) => (

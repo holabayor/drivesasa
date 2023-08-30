@@ -5,7 +5,7 @@ import Button from './Button';
 
 interface ProductCardProps {
   name: string;
-  price: string;
+  price?: string;
   image: string;
   icons?: string[];
 }
@@ -18,13 +18,13 @@ export default function ProductCard({
 }: ProductCardProps) {
   return (
     <div
-      className={`flex flex-col gap-4 items-start justify-between rounded-md pb-4 shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out`}
+      className={`flex flex-col bg-white gap-4 items-start justify-between rounded-md pb-4 shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out`}
     >
       <Image
         src={image}
         alt="product"
-        width={400}
-        height={400}
+        width={300}
+        height={300}
         className="object-contain"
       />
 

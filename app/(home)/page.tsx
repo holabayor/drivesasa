@@ -1,8 +1,8 @@
 import Hero from '@/components/Hero';
-import Navbar from '@/components/Navbar';
 import Advisory from '@/components/Advisory';
 import Marketplace from '@/components/Marketplace';
-import Footer from '@/components/Footer';
+import Services from '@/components/Services';
+import Testimonials from '@/components/Testimonials';
 
 export default function Home() {
   return (
@@ -10,6 +10,8 @@ export default function Home() {
       <Hero />
       <Advisory />
       <Marketplace />
+      <Services />
+      <Testimonials />
     </>
   );
 }

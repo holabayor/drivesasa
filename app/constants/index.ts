@@ -110,6 +110,39 @@ export const products = [
   },
 ];
 
+export const services = [
+  {
+    id: 1,
+    name: 'Quality Auto Repair Services',
+    image: '/images/service1.png',
+  },
+  {
+    id: 2,
+    name: 'Speed Governor Installation',
+    image: '/images/service2.png',
+  },
+  {
+    id: 3,
+    name: 'Epic Car Seat Covers',
+    image: '/images/service3.png',
+  },
+  {
+    id: 4,
+    name: 'Custom Mods And Body Work',
+    image: '/images/service4.png',
+  },
+];
+
+export const testimonials = [
+  {
+    id: 1,
+    date: '12th May 2021',
+    heading: 'Great service',
+    image: '/images/person1.png',
+    text: 'I had a great experience with Drivesasa. The team was very helpful and I got my car in no time. I would recommend them to anyone looking to buy a car. I had a great experience with Drivesasa. The team was very helpful and I got my car in no time. I would recommend them to anyone looking to buy a car. I had a great experience with Drivesasa. The team was very helpful and I got my car in no time. I would recommend them to anyone looking to buy a car.',
+  },
+];
+
 export const footerLinks = [
   {
     title: 'Useful Links',

@@ -7,7 +7,7 @@ import CTACard from './CTACard';
 export default function Advisory() {
   return (
     <section className="advisory-bg">
-      <div className="max-width flex-center flex-col p-2 md:p-6">
+      <div className="max-width flex-center flex-col p-2 md:py-2 lg:py-16">
         <div className="flex flex-col items-center md:items-start py-2 md:py-6">
           <p className="text-[8px] font-semibold uppercase text-red-600">
             car experts
