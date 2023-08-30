@@ -139,7 +139,14 @@ export const testimonials = [
     date: '12th May 2021',
     heading: 'Great service',
     image: '/images/person1.png',
-    text: 'I had a great experience with Drivesasa. The team was very helpful and I got my car in no time. I would recommend them to anyone looking to buy a car. I had a great experience with Drivesasa. The team was very helpful and I got my car in no time. I would recommend them to anyone looking to buy a car. I had a great experience with Drivesasa. The team was very helpful and I got my car in no time. I would recommend them to anyone looking to buy a car.',
+    text: 'I had a great experience with Drivesasa. The team was very helpful and I got my car in no time. I would recommend them to anyone looking to buy a car. I had a great experience with Drivesasa. The team was very helpful and I got my car in no time. I would recommend them to anyone looking to buy a car. I had a great experience with Drivesasa.',
+  },
+  {
+    id: 2,
+    date: '12th May 2021',
+    heading: 'Great service',
+    image: '/images/person2.png',
+    text: 'I had a great experience with Drivesasa. The team was very helpful and I got my car in no time. I would recommend them to anyone looking to buy a car. I had a great experience with Drivesasa. The team was very helpful and I got my car in no time. I would recommend them to anyone looking to buy a car. I had a great experience with Drivesasa.',
   },
 ];
 

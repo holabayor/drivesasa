@@ -5,7 +5,7 @@ import CTACard from './CTACard';
 
 const Hero = () => {
   return (
-    <section className="max-width hero-bg flex flex-col items-center justify-between min-h-screen md:min-h-[90vh] py-2 md:py-6">
+    <section className="max-width hero-bg flex flex-col items-center justify-between md:min-h-[90vh] py-2 md:py-6">
       <div className="flex flex-col items-center py-8">
         <h1 className="text-4xl md:text-6xl font-bold md:font-extrabold text-center uppercase">
           welcome to <br />

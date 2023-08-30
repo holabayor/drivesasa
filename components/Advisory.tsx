@@ -8,12 +8,12 @@ export default function Advisory() {
   return (
     <section className="advisory-bg">
       <div className="max-width flex-center flex-col p-2 md:py-2 lg:py-16">
-        <div className="flex flex-col items-center md:items-start py-2 md:py-6">
-          <p className="text-[8px] font-semibold uppercase text-red-600">
+        <div className="flex flex-col items-start sm:items-center py-2 md:py-6">
+          <p className="text-[8px] font-bold uppercase text-red-600">
             car experts
           </p>
           <h2 className="font-extrabold text-left">
-            Harness Our <br className="hidden md:block" />
+            Harness Our <br className="block sm:hidden" />
             Vehicle Expertise
           </h2>
         </div>

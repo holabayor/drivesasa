@@ -99,6 +99,9 @@
     @apply before:content-['']  before:inset-0 before:bg-gradient-to-b before:from-gray-600 before:to-white before:to-40% before:opacity-10 before:z-[-5];
   }
   .advisory-bg {
-    @apply w-full z-10  bg-[url('/images/advisory.png')] bg-cover bg-center;
+    @apply w-full bg-[url('/images/advisory.png')] bg-cover bg-center;
+  }
+  .testimonial-bg {
+    @apply w-full bg-[url('/images/testimonial.png')] bg-cover bg-center;
   }
 }
