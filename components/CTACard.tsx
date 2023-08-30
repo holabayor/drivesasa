@@ -30,7 +30,13 @@ export default function CTACard({ heading, text, icon, white }: CTACardProps) {
       )}
 
       <div className="flex flex-col items-center">
-        <h4 className="uppercase font-semibold text-xs py-2">{heading}</h4>
+        <h4
+          className={`uppercase font-bold text-xs py-2 ${
+            icon ? '' : 'text-red-600'
+          }`}
+        >
+          {heading}
+        </h4>
         <p className="text-xs text-center">{text}</p>
       </div>
       <Button label="book appointment" white={white} />

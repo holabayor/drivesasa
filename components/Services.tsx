@@ -13,7 +13,13 @@ export default function Services() {
       </div>
       <div className="flex flex-wrap justify-evenly gap-4 md:gap-8 py-4">
         {services.map((product, index) => (
-          <ProductCard key={index} name={product.name} image={product.image} />
+          <ProductCard
+            key={index}
+            name={product.name}
+            image={product.image}
+            text={product.text}
+            rating={product.rating}
+          />
         ))}
       </div>
     </section>

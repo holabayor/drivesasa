@@ -14,7 +14,7 @@ export default function Navbar() {
       <Image src="/logo.png" alt="logo" width={70} height={70} />
       <ul className="hidden sm:flex list-none">
         {navLinks.map((nav, index) => (
-          <li key={index} className="nav-link">
+          <li key={index} className="nav-link underline-link">
             <Link href={nav.link}>{nav.name}</Link>
           </li>
         ))}

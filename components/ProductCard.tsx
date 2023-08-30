@@ -2,12 +2,15 @@
 
 import Image, { StaticImageData } from 'next/image';
 import Button from './Button';
+import ReactStars from 'react-stars';
 
 interface ProductCardProps {
   name: string;
   price?: string;
   image: string;
   icons?: string[];
+  rating: number;
+  text?: string;
 }
 
 export default function ProductCard({
@@ -15,6 +18,8 @@ export default function ProductCard({
   price,
   image,
   icons,
+  rating,
+  text,
 }: ProductCardProps) {
   return (
     <div
@@ -28,9 +33,12 @@ export default function ProductCard({
         className="object-contain"
       />
 
-      <div className="flex flex-col items-start px-2">
-        <h4 className="uppercase font-semibold text-xs sm:text-sm">{name}</h4>
-        <p className="text-sm text-center">{price}</p>
+      <div className="w-full flex flex-col items-start px-2">
+        <h4 className="font-bold text-xs sm:text-sm">{name}</h4>
+        <div className="w-full flex justify-between border-b">
+          <p className="text-sm text-center text-[#BC2A2B]">{price || text}</p>
+          <ReactStars value={rating} />
+        </div>
         {icons && (
           <div>
             <Image

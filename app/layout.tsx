@@ -1,10 +1,13 @@
 import Navbar from '@/components/Navbar';
 import './globals.css';
 import type { Metadata } from 'next';
-import { Jost } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 import Footer from '@/components/Footer';
 
-const jost = Jost({ subsets: ['latin'] });
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '100', '200', '300', '500', '600', '700', '800', '900'],
+});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -18,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={jost.className}>
+      <body className={poppins.className}>
         <Navbar />
         {children}
         <Footer />

@@ -14,7 +14,7 @@ export default function Testimonials() {
           </p>
           <h2 className="font-extrabold">Join Our Happy Clients</h2>
         </div>
-        <Marquee speed={35} pauseOnHover={true} autoFill={true}>
+        <Marquee speed={35} pauseOnClick={true} autoFill={true}>
           {testimonials.map((card, index) => (
             <TestimonialCard
               key={index}

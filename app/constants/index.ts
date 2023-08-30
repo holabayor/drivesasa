@@ -18,8 +18,8 @@ export const navLinks = [
   },
   {
     id: 4,
-    name: 'marketplace',
-    link: '/marketplace',
+    name: 'blog',
+    link: '/blog',
   },
   {
     id: 5,
@@ -114,22 +114,34 @@ export const services = [
   {
     id: 1,
     name: 'Quality Auto Repair Services',
+    text: "John's Auto Garage",
     image: '/images/service1.png',
+    rating: 4,
+    count: 12,
   },
   {
     id: 2,
     name: 'Speed Governor Installation',
+    text: 'DXQ Auto Services',
     image: '/images/service2.png',
+    rating: 5,
+    count: 3,
   },
   {
     id: 3,
     name: 'Epic Car Seat Covers',
+    text: 'Car Seat Covers Kenya',
     image: '/images/service3.png',
+    rating: 4,
+    count: 7,
   },
   {
     id: 4,
     name: 'Custom Mods And Body Work',
+    text: 'Ridgeways Auto Services',
     image: '/images/service4.png',
+    rating: 5,
+    count: 9,
   },
 ];
 
