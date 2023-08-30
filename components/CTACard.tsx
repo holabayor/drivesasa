@@ -17,7 +17,7 @@ export default function CTACard({ heading, text, icon, white }: CTACardProps) {
         white
           ? 'first:bg-blue-100 last:bg-blue-100'
           : 'first:bg-white last:bg-white'
-      }  bg-rose-100/90 hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out `}
+      }  bg-rose-100/90 hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out`}
     >
       {icon && (
         <Image

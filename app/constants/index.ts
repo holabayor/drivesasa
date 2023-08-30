@@ -1,5 +1,33 @@
 import { car, cart, hands } from '@/public/images';
 
+export const navLinks = [
+  {
+    id: 1,
+    name: 'home',
+    link: '/',
+  },
+  {
+    id: 2,
+    name: 'marketplace',
+    link: '/marketplace',
+  },
+  {
+    id: 3,
+    name: 'services',
+    link: '/services',
+  },
+  {
+    id: 4,
+    name: 'marketplace',
+    link: '/marketplace',
+  },
+  {
+    id: 5,
+    name: 'contact',
+    link: '/contact',
+  },
+];
+
 export const heroCards = [
   {
     id: 1,

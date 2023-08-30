@@ -35,10 +35,7 @@ export default function Footer() {
           <>
             <div className="group relative h-12 w-full">
               <div className="absolute px-4 top-2/4 rounded-r-md right-0 grid h-full -translate-y-2/4 place-items-center bg-blue-500 cursor-pointer">
-                <MoveRight
-                  size={20}
-                  className="group-hover:scale-105 -translate-x-2 group-hover:translate-x-2 transition-all duration-300 ease-in-out"
-                />
+                <MoveRight size={20} className="group-hover:animate-slide" />
               </div>
               <input
                 type="email"
