@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import Button from './Button';
-import CTACard from './CTACard';
+import CTACard from '../app/(home)/components/CTACard';
 import { heroCards } from '@/constants';
 
 export default function CTA() {
