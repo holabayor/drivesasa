@@ -1,6 +1,6 @@
 'use client';
 
-import { footerLinks } from '@/app/constants';
+import { footerLinks } from '@/constants';
 import { MoveRight } from 'lucide-react';
 
 export default function Footer() {

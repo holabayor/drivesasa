@@ -1,9 +1,9 @@
 import React from 'react';
-import { heroCards } from '@/app/constants';
+import { heroCards } from '@/constants';
 import CTACard from './CTACard';
 
 import { Jost } from 'next/font/google';
-const jost = Jost({  subsets: ['latin'],});
+const jost = Jost({ subsets: ['latin'] });
 
 const Hero = () => {
   return (

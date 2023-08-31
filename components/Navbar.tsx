@@ -1,6 +1,6 @@
 'use client';
 
-import { navLinks } from '@/app/constants';
+import { navLinks } from '@/constants';
 import { Menu, X } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -11,7 +11,7 @@ export default function Navbar() {
   const Icon = toggle ? X : Menu;
   return (
     <nav className="max-width flex-between py-2 bg-white px-4 md:px-6 z-50">
-      <Image src="/logo.png" alt="logo" width={70} height={70} />
+      <Image src="/images/logo.png" alt="logo" width={70} height={70} />
       <ul className="hidden sm:flex list-none">
         {navLinks.map((nav, index) => (
           <li key={index} className="nav-link underline-link">

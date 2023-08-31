@@ -1,5 +1,5 @@
 'use client';
-import { services } from '@/app/constants';
+import { services } from '@/constants';
 import ProductCard from './ProductCard';
 
 export default function Services() {

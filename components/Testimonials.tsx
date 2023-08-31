@@ -1,6 +1,6 @@
 'use client';
 
-import { testimonials } from '@/app/constants';
+import { testimonials } from '@/constants';
 import TestimonialCard from './TestimonialCard';
 import Marquee from 'react-fast-marquee';
 

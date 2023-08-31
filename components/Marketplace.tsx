@@ -1,5 +1,5 @@
 'use client';
-import { products } from '@/app/constants';
+import { products } from '@/constants';
 import ProductCard from './ProductCard';
 
 export default function Marketplace() {

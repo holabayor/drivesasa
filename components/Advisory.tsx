@@ -1,6 +1,6 @@
 'use client';
 
-import { advisoryCards } from '@/app/constants';
+import { advisoryCards } from '@/constants';
 
 import CTACard from './CTACard';
 
