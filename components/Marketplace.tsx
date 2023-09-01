@@ -1,6 +1,8 @@
 'use client';
 import { products } from '@/constants';
 import ProductCard from './ProductCard';
+import { MoveRight } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Marketplace() {
   return (
@@ -21,6 +23,10 @@ export default function Marketplace() {
             rating={product.rating}
           />
         ))}
+      </div>
+      <div className="group flex items-center gap-2 py-2 md:py-8 text-red-600">
+        <Link href={'/products'}>All Products</Link>
+        <MoveRight size={20} className="group-hover:animate-slide" />
       </div>
     </section>
   );
