@@ -1,6 +1,7 @@
 'use client';
 import { services } from '@/constants';
 import ProductCard from './ProductCard';
+import { MoveRight } from 'lucide-react';
 
 export default function Services() {
   return (
@@ -21,6 +22,10 @@ export default function Services() {
             rating={product.rating}
           />
         ))}
+      </div>
+      <div className="group flex items-center gap-2 py-2 md:py-8 text-red-600">
+        All Services
+        <MoveRight size={20} className="group-hover:animate-slide" />
       </div>
     </section>
   );
