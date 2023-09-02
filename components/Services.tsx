@@ -20,10 +20,11 @@ export default function Services() {
             image={product.image}
             text={product.text}
             rating={product.rating}
+            count={product.count}
           />
         ))}
       </div>
-      <div className="group flex items-center gap-2 py-2 md:py-8 text-red-600">
+      <div className="group flex items-center gap-2 py-2 md:py-8 text-xs text-red-600">
         All Services
         <MoveRight size={20} className="group-hover:animate-slide" />
       </div>

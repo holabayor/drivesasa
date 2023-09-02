@@ -24,7 +24,7 @@ export default function Marketplace() {
           />
         ))}
       </div>
-      <div className="group flex items-center gap-2 py-2 md:py-8 text-red-600">
+      <div className="group flex items-center gap-2 py-2 md:py-8 text-xs text-red-600">
         <Link href={'/products'}>All Products</Link>
         <MoveRight size={20} className="group-hover:animate-slide" />
       </div>

@@ -11,6 +11,7 @@ interface ProductCardProps {
   icons?: string[];
   rating: number;
   text?: string;
+  count?: number;
 }
 
 export default function ProductCard({
@@ -20,6 +21,7 @@ export default function ProductCard({
   icons,
   rating,
   text,
+  count,
 }: ProductCardProps) {
   return (
     <div
@@ -35,9 +37,14 @@ export default function ProductCard({
 
       <div className="w-full flex flex-col items-start px-2">
         <h4 className="font-bold text-xs sm:text-sm">{name}</h4>
-        <div className="w-full flex justify-between border-b">
-          <p className="text-sm text-center text-[#BC2A2B]">{price || text}</p>
-          <ReactStars value={rating} />
+        <div className="w-full flex items-center justify-between border-b mb-2">
+          <p className={`text-[#BC2A2B] ${price ? 'font-bold' : 'text-xs'}`}>
+            {price || text}
+          </p>
+          <div className="flex items-center gap-1">
+            <ReactStars value={rating} />{' '}
+            {count && <span className="text-xs">({count})</span>}
+          </div>
         </div>
         {icons && (
           <div>

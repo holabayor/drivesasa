@@ -6,7 +6,7 @@ import Marquee from 'react-fast-marquee';
 
 export default function Testimonials() {
   return (
-    <section className="advisory-bg py-4 md:py-12">
+    <section className="advisory-bg py-6 md:py-12">
       <div className="max-width flex-center flex-col p-2 md:py-2 lg:py-16">
         <div className="flex flex-col items-center py-2 md:py-6">
           <p className="text-[8px] font-bold uppercase text-red-600 py">
