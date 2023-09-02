@@ -1,7 +1,16 @@
 'use client';
 
 import { footerLinks } from '@/constants';
-import { MoveRight } from 'lucide-react';
+import {
+  Facebook,
+  FacebookIcon,
+  Linkedin,
+  LinkedinIcon,
+  MoveRight,
+  Twitter,
+  TwitterIcon,
+} from 'lucide-react';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -51,7 +60,18 @@ export default function Footer() {
           </p>
         </div>
       </div>
-      <div className="flex"></div>
+      <div className="flex justify-between">
+        <>
+          <Linkedin size={20} />
+          <Facebook size={20} />
+          <Twitter size={20} />
+        </>
+        <>
+        <span>Term</span>
+        <span>Privacy</span>
+        <span>Cookies</span>
+        </>
+      </div>
     </footer>
   );
 }
