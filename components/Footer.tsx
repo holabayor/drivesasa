@@ -11,6 +11,7 @@ import {
   TwitterIcon,
 } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -60,17 +61,29 @@ export default function Footer() {
           </p>
         </div>
       </div>
-      <div className="flex justify-between">
-        <>
-          <Linkedin size={20} />
-          <Facebook size={20} />
-          <Twitter size={20} />
-        </>
-        <>
-        <span>Term</span>
-        <span>Privacy</span>
-        <span>Cookies</span>
-        </>
+      <div className="flex justify-between items-center py-6">
+        <div className="flex text-xs gap-4">
+          <span>Term</span>
+          <span>Privacy</span>
+          <span>Cookies</span>
+        </div>
+        <div className="flex gap-4 place-content-center">
+          <div className="border border-white rounded-full p-2">
+            <Link href={'/'}>
+              <Linkedin size={15} />
+            </Link>
+          </div>
+          <div className="border border-white rounded-full p-2">
+            <Link href={'/'}>
+              <Facebook size={15} />
+            </Link>
+          </div>
+          <div className="border border-white rounded-full p-2">
+            <Link href={'/'}>
+              <Twitter size={15} />
+            </Link>
+          </div>
+        </div>
       </div>
     </footer>
   );
