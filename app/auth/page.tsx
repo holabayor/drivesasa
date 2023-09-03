@@ -4,13 +4,13 @@ import Image from 'next/image';
 
 export default function page() {
   return (
-    <div className="max-width flex flex-1 max-h-screen">
+    <div className="max-width flex flex-1 min-h-screen">
       <div>
         <Image
           src="/images/woman.png"
           fill={true}
           alt="logo"
-          className="object-contain"
+          className="object-cover"
         />
       </div>
       <div>
